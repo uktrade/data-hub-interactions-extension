@@ -1,0 +1,29 @@
+{
+  "name": "Data Hub Interactions",
+  "version": "1.0",
+  "description": "Finds calendar events at outlook.com and helps to create Data Hub interactions with prepopulated values from the event.",
+  "permissions": ["activeTab", "http://www.example.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "browser_action": {
+    "default_title": "Time to current page",
+    "default_icon": {
+      "16": "images/crown16.png",
+      "32": "images/crown32.png",
+      "48": "images/crown48.png",
+      "128": "images/crown128.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "images/crown16.png",
+    "32": "images/crown32.png",
+    "48": "images/crown48.png",
+    "128": "images/crown128.png"
+  },
+  "manifest_version": 2
+}

@@ -1,0 +1,47 @@
+<head>
+  <style>
+    body {
+      font: 15px/20px Arial, sans-serif;
+      min-width: 250px;
+      padding: 10px;
+    }
+
+    *:empty, a[href="#"] {
+      display: none !important;
+    }
+
+    #status {
+      border: 3px solid rgb(0, 94, 165);
+      padding: 10px;
+    }
+
+    #create {
+      width: 100%;
+      margin-top: 20px;
+      font: 19px/24px Arial, sans-serif;
+      background-color: #00823b;
+      display: inline-block;
+      padding: .526315em .789473em .263157em;
+      border: none;
+      border-radius: 0;
+      outline: 1px solid transparent;
+      outline-offset: -1px;
+      box-shadow: 0 2px 0 #003618;
+      text-decoration: none;
+      cursor: pointer;
+      color: #fff;
+      box-sizing: border-box;
+      vertical-align: top;
+      text-align: center;
+    }
+  </style>
+  <script src="popup.js"></script>
+</head>
+<body>
+  <div id="status">
+    <div id="status-message"></div>
+    <details id="status-details"></details>
+  </div>
+
+  <a href="#" id="create" target="_blank">Create interaction</a>
+</body>
