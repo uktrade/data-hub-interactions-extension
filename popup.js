@@ -12,7 +12,7 @@ function handleError(e) {
 
 function getUrlToStubInteractionForm(stubInteraction) {
   const params = [
-    stubInteraction.company_id && `company_id=${stubInteraction.company}`,
+    stubInteraction.company && `company_id=${stubInteraction.company}`,
     stubInteraction.subject && `subject=${stubInteraction.subject}`,
     stubInteraction.date && `date=${stubInteraction.date}`,
     ...stubInteraction.contacts ? stubInteraction.contacts.map(c => `contact_id=${c}`) : [],
